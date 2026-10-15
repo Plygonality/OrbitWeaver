@@ -1,0 +1,40 @@
+{
+  "observed_only": true,
+  "statement": "These are elapsed times measured on the machine described here. They are not a guarantee of throughput.",
+  "machine": {
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) Processor",
+    "logical_cpus": 4,
+    "memory_bytes": 16780627968,
+    "numpy": "2.5.4"
+  },
+  "runs": [
+    {
+      "n_orbits": 1000,
+      "n_times": 4,
+      "batch_orbits": 8192,
+      "repeats_s": [
+        0.0013074859998596366,
+        0.0010810260000653216,
+        0.001055722000046444
+      ],
+      "min_s": 0.001055722000046444,
+      "kepler_residual_max_rad": 9.992007221626409e-15
+    },
+    {
+      "n_orbits": 100000,
+      "n_times": 4,
+      "batch_orbits": 8192,
+      "repeats_s": [
+        0.10018312100010007,
+        0.09994361200006097,
+        0.09877147200018044
+      ],
+      "min_s": 0.09877147200018044,
+      "kepler_residual_max_rad": 9.992007221626409e-15
+    }
+  ]
+}

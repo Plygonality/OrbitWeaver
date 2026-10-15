@@ -1,0 +1,42 @@
+{
+  "observed_only": true,
+  "commands": {
+    "propagate": {
+      "argv": "orbitweaver propagate build/shell/manifest.json --duration 365d --step 1d --out build/ephemeris --preview-metres-per-unit 1e9",
+      "elapsed_s": 1.1786956787109375,
+      "time_count": 366,
+      "single_file": true,
+      "kepler_residual_max_rad": 4.440892098500626e-16,
+      "position_shape": [
+        366,
+        1000,
+        3
+      ],
+      "position_dtype": "float64",
+      "preview_float32_step_note": "CLI reported float32 step at the reference distance of 1.525879e+04 m with metres_per_unit 1e9"
+    },
+    "screen": {
+      "argv": "orbitweaver screen build/shell/manifest.json --duration 365d --step 1h --out reports/encounters",
+      "elapsed_s": 7.998206615447998,
+      "certificate": "not_certified",
+      "n_samples": 8761,
+      "max_missed_approach_m": 110395805.41138797,
+      "reported_min_m": 64702598.950855345,
+      "pair": [
+        "COL-000241",
+        "COL-000253"
+      ],
+      "source": "refined"
+    },
+    "report": {
+      "argv": "orbitweaver report build/shell/manifest.json --out reports/design.html",
+      "elapsed_s": 0.4609551429748535
+    },
+    "reference_closure": {
+      "a_m": 6778137.0,
+      "period_s": 5553.6245624479825,
+      "closure_m": 0.0,
+      "speed_m_s": 7668.557773318013
+    }
+  }
+}

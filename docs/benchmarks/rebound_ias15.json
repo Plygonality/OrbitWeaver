@@ -1,0 +1,46 @@
+{
+  "observed_only": true,
+  "statement": "Position differences between OrbitWeaver and REBOUND IAS15 on this machine. A match is a two-body state comparison, not an N-body validation and not a stability proof.",
+  "whfast_not_used": "WHFast is for weakly perturbed systems and is not a close-encounter solver. This check calls IAS15 only.",
+  "cases": [
+    {
+      "status": "compared",
+      "available": true,
+      "passed": true,
+      "version": "5.2.2",
+      "integrator_used": "ias15",
+      "max_position_error_m": 1.1783100748867468e-08,
+      "relative_tolerance": 1e-06,
+      "whfast_role": "WHFast targets weakly perturbed dominant-central-mass systems and is not a general close-encounter solver. The optional check uses IAS15.",
+      "assumption": "massless test particle, SI units, IAS15, no extra forces",
+      "name": "circular_earth",
+      "n_times": 9
+    },
+    {
+      "status": "compared",
+      "available": true,
+      "passed": true,
+      "version": "5.2.2",
+      "integrator_used": "ias15",
+      "max_position_error_m": 0.0015381131850962623,
+      "relative_tolerance": 1e-06,
+      "whfast_role": "WHFast targets weakly perturbed dominant-central-mass systems and is not a general close-encounter solver. The optional check uses IAS15.",
+      "assumption": "massless test particle, SI units, IAS15, no extra forces",
+      "name": "inclined_ellipse_e0.8",
+      "n_times": 7
+    },
+    {
+      "status": "compared",
+      "available": true,
+      "passed": true,
+      "version": "5.2.2",
+      "integrator_used": "ias15",
+      "max_position_error_m": 0.008746036043835007,
+      "relative_tolerance": 1e-06,
+      "whfast_role": "WHFast targets weakly perturbed dominant-central-mass systems and is not a general close-encounter solver. The optional check uses IAS15.",
+      "assumption": "massless test particle, SI units, IAS15, no extra forces",
+      "name": "high_eccentricity_e0.99",
+      "n_times": 5
+    }
+  ]
+}
