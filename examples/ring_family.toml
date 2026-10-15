@@ -1,0 +1,32 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "science"
+note = "A ring family shares a, e, and i. The satellites are separate ellipses with phased mean anomaly. Nothing in this file is a rigid ring."
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "earth"
+
+[array]
+seed = 3
+id_prefix = "RING"
+min_initial_separation_m = 1000.0
+
+[[shells]]
+name = "equatorial_family"
+kind = "ring_family"
+count = 24
+group = "ring_family"
+body_radius_m = 2.0
+a_m = 42164000.0
+e = 0.0
+inclination = { mode = "fixed", deg = 0.0 }
+raan = { mode = "fixed", deg = 0.0 }
+argp = { mode = "fixed", deg = 0.0 }
+rendering = { role = "collector" }

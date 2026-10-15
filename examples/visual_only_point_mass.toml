@@ -1,0 +1,39 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "visual_only"
+note = "Artwork preset. Newtonian point-mass ellipses only. This is not a black hole, not an event horizon, and not a relativistic orbit."
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "custom"
+name = "visual_point_mass"
+mass_kg = 1.988409870698051e30
+radius_m = 695700000.0
+mu_m3_s2 = 1.3271244e20
+exclusion_radius_m = 695700000.0
+frame = "OW_INERTIAL_V1"
+
+[array]
+seed = 11
+id_prefix = "ART"
+min_initial_separation_m = 1000000000.0
+
+[[shells]]
+name = "preview_collectors"
+kind = "shell"
+count = 48
+group = "visual"
+body_radius_m = 10.0
+a_m = { min = "1.0 AU", max = "1.0 AU" }
+e = 0.0
+inclination = { mode = "isotropic" }
+raan = { mode = "uniform" }
+argp = { mode = "fixed", deg = 0.0 }
+mean_anomaly = { mode = "uniform" }
+rendering = { role = "artwork_collector", color = "#f0e2c4" }

@@ -1,0 +1,41 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "science"
+note = "Two circular orbits of equal radius. Mean anomaly -90 deg puts both centres on the +X node one quarter period after the epoch. Body radii are large enough that the crossing is a volume intersection. This is a controlled encounter, not a stable constellation."
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "earth"
+
+[array]
+seed = 7
+id_prefix = "ENC"
+min_initial_separation_m = 0.0
+
+[[orbits]]
+id = "ENC-A"
+a_m = 7000000.0
+e = 0.0
+inclination_deg = 0.0
+raan_deg = 0.0
+argp_deg = 0.0
+mean_anomaly_deg = -90.0
+body_radius_m = 1000.0
+group = "encounter"
+
+[[orbits]]
+id = "ENC-B"
+a_m = 7000000.0
+e = 0.0
+inclination_deg = 20.0
+raan_deg = 0.0
+argp_deg = 0.0
+mean_anomaly_deg = -90.0
+body_radius_m = 1000.0
+group = "encounter"
