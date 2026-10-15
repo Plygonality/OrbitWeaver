@@ -1,0 +1,30 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "science"
+note = "Analytical circular benchmark. Epoch state is r = (a, 0, 0), v = (0, sqrt(mu/a), 0) in OW_INERTIAL_V1. The period is 2*pi*sqrt(a^3/mu)."
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "earth"
+
+[array]
+seed = 1
+id_prefix = "REF"
+
+[[orbits]]
+id = "REF-CIRC-1"
+a_m = 6778137.0
+e = 0.0
+inclination_deg = 0.0
+raan_deg = 0.0
+argp_deg = 0.0
+mean_anomaly_deg = 0.0
+body_radius_m = 1.0
+group = "reference"
+rendering = { role = "benchmark" }

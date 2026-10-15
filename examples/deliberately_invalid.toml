@@ -1,0 +1,28 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "science"
+note = "Negative test. Pericentre is inside Earth on purpose."
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "earth"
+
+[array]
+seed = 1
+id_prefix = "INV"
+
+[[orbits]]
+id = "INV-PERI"
+a_m = 5000000.0
+e = 0.0
+inclination_deg = 15.0
+mean_anomaly_deg = 10.0
+body_radius_m = 1.0
+group = "negative_test"
+deliberately_invalid = true

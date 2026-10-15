@@ -1,0 +1,25 @@
+format = "orbitweaver.config"
+format_version = "1.0.0"
+
+[physics]
+model = "newtonian_two_body_kepler"
+intent = "science"
+
+[epoch]
+iso = "2000-01-01T12:00:00"
+scale = "tt"
+
+[central_body]
+preset = "earth"
+
+[array]
+seed = 1
+id_prefix = "BAD"
+
+[[orbits]]
+id = "BAD-HYPERBOLA"
+a_m = 8000000.0
+e = 1.2
+inclination_deg = 10.0
+body_radius_m = 1.0
+group = "invalid"
