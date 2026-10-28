@@ -26,12 +26,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-------------------------------------------------------------------------------
-Optional REBOUND extra
-
-OrbitWeaver itself is BSD-3-Clause. The optional ``rebound`` extra imports
-REBOUND (GPL-3.0-only, Copyright Hanno Rein and contributors) when that
-package is installed. OrbitWeaver does not vendor REBOUND source. A combined
-work that imports REBOUND is subject to REBOUND's licence. The Keplerian core
-runs without REBOUND.

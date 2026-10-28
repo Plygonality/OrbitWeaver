@@ -33,7 +33,7 @@ The central-body pericentre check is analytic and does not depend on the step. S
 
 ## Optional REBOUND
 
-REBOUND is GPL-3.0-only and is not a required dependency. The core package is BSD-3-Clause. The optional comparison uses IAS15 on one massless particle. WHFast is not called: it is for weakly perturbed systems, not for close encounters and not for this check. A missing install is **unverified**, not a pass. A match does not turn the array into an N-body integration.
+REBOUND is GPL-3.0-or-later (see [NOTICE](../NOTICE)) and is not a required dependency. The core package is BSD-3-Clause. The optional comparison uses IAS15 on one massless particle. WHFast is not called: it is for weakly perturbed systems, not for close encounters and not for this check. A missing install is **unverified**, not a pass. A match does not turn the array into an N-body integration.
 
 ## Ecosystem contracts
 

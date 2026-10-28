@@ -40,7 +40,7 @@ Python 3.11 or newer.
 pip install -e ".[dev]"
 ```
 
-Runtime dependencies are NumPy, SciPy, and Astropy, all BSD-licensed. REBOUND is optional (`pip install -e ".[rebound]"`) and is GPL-3.0-only. The Kepler core runs without it. WHFast is not used: it is for weakly perturbed systems, not for close encounters. The optional check uses IAS15 and reports **unverified** when REBOUND is absent.
+Runtime dependencies are NumPy, SciPy, and Astropy, all BSD-licensed. REBOUND is optional (`pip install -e ".[rebound]"`). Its source headers grant GPL-3.0-or-later; see [NOTICE](NOTICE). The Kepler core runs without it. WHFast is not used: it is for weakly perturbed systems, not for close encounters. The optional check uses IAS15 and reports **unverified** when REBOUND is absent.
 
 ## Commands
 
@@ -112,4 +112,4 @@ Observed propagation timings, measured on a specific machine and not offered as 
 
 ## Licence
 
-BSD-3-Clause. See [LICENSE](LICENSE). The optional REBOUND extra is GPL-3.0-only and is not vendored.
+BSD-3-Clause. See [LICENSE](LICENSE). The optional REBOUND extra is not vendored. Its licence is in [NOTICE](NOTICE).
