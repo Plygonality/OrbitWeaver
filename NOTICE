@@ -1,0 +1,23 @@
+Third-party notices
+
+OrbitWeaver is licensed under the BSD-3-Clause License. See LICENSE.
+
+Optional REBOUND extra
+
+The optional "rebound" extra imports REBOUND when that package is installed.
+OrbitWeaver does not vendor REBOUND source. REBOUND is an optional runtime
+dependency, used only for an IAS15 comparison
+(src/orbitweaver/rebound_check.py). The Keplerian core runs without it.
+
+REBOUND is Copyright (c) 2011 Hanno Rein, Shangfei Liu, and contributors,
+as stated in its source headers (for example src/rebound.c). Those headers,
+and the REBOUND README, grant the GNU General Public License as published
+by the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version (SPDX: GPL-3.0-or-later):
+
+    https://github.com/hannorein/rebound
+
+REBOUND's pyproject.toml and its PyPI metadata currently label the package
+GPL-3.0-only. That label is narrower than the grant in the source headers.
+
+A combined work that imports REBOUND is subject to REBOUND's licence.
